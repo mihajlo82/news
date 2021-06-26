@@ -1,0 +1,341 @@
+#about{
+    width: 100vw;
+    height: 100vh;
+    background: url("../../imgs/about.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    transition:all 2s ease-in;
+    -webkit-transition:all 2s ease-in;
+    -moz-transition:all 2s ease-in;
+    -ms-transition:all 2s ease-in;
+    -o-transition:all 2s ease-in;
+    /* position:relative; */
+}
+
+.about-wrapper{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    position:relative;
+
+}
+
+.left-about{
+    width: 42%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.img-wrapp{
+    width: 450px;
+    height: 400px;
+    background: url("../../imgs/aboutSecImg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.right-about{
+    margin-top: 0px;
+    width: 58%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text-content{
+    width: 90%;
+    padding: 25px;
+    margin-top: -10px;
+    font-family: 'Mulish', sans-serif;
+    color: rgb(24, 68, 134);
+    font-weight: bold;
+}
+
+.about-text-content h2{
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+    font-family: 'ZCOOL KuaiLe', cursive;
+ }
+
+ .about-text-content p{
+    font-size: 1.2rem;
+    line-height: 1.3;
+ }
+
+ .about-text-content ul li{
+     list-style-type: none;
+     padding-left: 15px;
+     font-size: 1.15rem;
+ }
+
+ .duties{
+     margin-top:25px;
+     text-decoration: underline;
+ }
+
+ /* ////// RESPONSIVE ABOUT ////// */
+
+
+ @media only screen and (max-width: 1300px) { 
+
+ .img-wrapp{
+    width: 400px;
+    height: 365px;
+}
+
+.about-text-content{
+    width: 95%;
+    padding: 15px;
+    margin-top: -10px;
+}
+
+.about-text-content h2{
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+ }
+
+ .about-text-content p{
+    font-size: 1.15rem;
+    line-height: 1.3;
+ }
+
+
+.about-text-content ul li{
+    font-size: 1.09rem;
+}
+}
+
+@media only screen and (max-width: 1160px) { 
+
+ .img-wrapp{
+    width: 400px;
+    height: 365px;
+}
+
+.about-text-content{
+    width: 95%;
+    padding: 10px;
+    margin-top: 0px;
+
+}
+
+.about-text-content ul li{
+    font-size: 1rem;
+}
+}
+
+@media only screen and (max-width: 1000px) { 
+.left-about{
+    width: 36%;
+}
+.img-wrapp{
+    width: 360px;
+    height: 340px;
+    margin-left: 10px;
+}
+
+.right-about{
+    width: 64%;
+}
+
+.about-text-content h2{
+    font-size: 2.3rem;
+    margin-bottom: 7px;
+ }
+
+ .about-text-content p{
+    font-size: 1.1rem;
+    line-height: 1.24;
+ }
+}
+
+@media only screen and (max-width: 924px) { 
+    .left-about{
+        width: 0%;
+        display: none;
+    }
+    .img-wrapp{
+        display: none;
+    }
+    
+    .right-about{
+        width: 100%;
+        align-items: center;
+    }
+
+    .about-text-content{
+        width: 90%;
+        padding: 20px;
+        margin-top: -30px  
+    }
+    
+    .about-text-content h2{
+        width: 100%;
+        text-align: center;
+        font-size: 2.88rem;
+        margin-bottom: 30px;
+     }
+    
+     .about-text-content p{
+        font-size: 1.2rem;
+        line-height: 1.5;
+     }
+
+     .about-text-content ul{
+        line-height: 1.5;
+     }
+    
+     .about-text-content ul li{
+         list-style-type: none;
+         padding-left: 15px;
+         font-size: 1.15rem;
+     }
+    
+     .duties{
+         margin-top:25px;
+         text-decoration: underline;
+     }
+
+}
+
+@media only screen and (max-width: 555px) { 
+
+    .about-text-content{
+        width: 94%;
+        padding: 10px;
+        margin-top: -30px  
+    }
+    
+    .about-text-content h2{
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+     }
+    
+     .about-text-content p{
+        font-size: 1.1rem;
+        line-height: 1.4;
+     }
+
+     .about-text-content ul{
+        line-height: 1.4;
+     }
+    
+     .about-text-content ul li{
+         list-style-type: none;
+         padding-left: 15px;
+         font-size: 1.03rem;
+     }
+    
+     .duties{
+         margin-top:25px;
+         text-decoration: underline;
+     }
+}
+
+@media only screen and (max-width: 375px) { 
+
+    .about-text-content{
+        width: 95%;
+        padding: 10px;
+        margin-top: -30px  
+    }
+    
+    .about-text-content h2{
+        font-size: 2.4rem;
+        margin-bottom: 30px;
+     }
+    
+     .about-text-content p{
+        font-size: 1.04rem;
+        line-height: 1.33;
+     }
+
+     .about-text-content ul{
+        line-height: 1.33;
+     }
+    
+     .about-text-content ul li{
+         list-style-type: none;
+         padding-left: 15px;
+         font-size: 0.97rem;
+     }
+}
+
+@media only screen and (max-width: 303px) { 
+
+    .about-text-content{
+        width: 97%;
+        padding: 7px;
+        margin-top: -30px  
+    }
+    
+    .about-text-content h2{
+        font-size: 2rem;
+        margin-bottom: 30px;
+     }
+    
+     .about-text-content p{
+        font-size: 1rem;
+        line-height: 1.2;
+     }
+
+     .about-text-content ul{
+        line-height: 1.2;
+     }
+    
+     .about-text-content ul li{
+         font-size: 0.97rem;
+     }
+}
+
+@media only screen and (max-width: 253px) { 
+    .about-text-content{
+        width: 99%; 
+    }
+    
+    .about-text-content h2{
+        font-size: 1.7rem;
+        margin-bottom: 30px;
+     }
+    
+     .about-text-content p{
+        font-size: 0.89rem;
+        line-height: 1;
+     }
+
+     .about-text-content ul{
+        line-height: 1.;
+     }
+    
+     .about-text-content ul li{
+         font-size: 0.89rem;
+     }
+}
+
+@media only screen and (max-width: 153px) { 
+    .about-text-content{
+        width: 99%; 
+    }
+    
+    .about-text-content h2{
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+     }
+    
+     .about-text-content p{
+        font-size: 0.5rem;
+        line-height: 1;
+     }
+
+     .about-text-content ul{
+        line-height: 1;
+     }
+    
+     .about-text-content ul li{
+         font-size: 0.5rem;
+     }
+}

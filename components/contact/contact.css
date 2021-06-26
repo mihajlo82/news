@@ -1,0 +1,357 @@
+#contact{
+    width: 100vw;
+    min-height: 100vh;
+    background: url("../../imgs/contact.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1s ease-in;
+    -webkit-transition: 1s ease-in;
+    -moz-transition: 1s ease-in;
+    -ms-transition: 1s ease-in;
+    -o-transition: 1s ease-in;
+}
+.contact-wrapper{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    position:relative;
+}
+
+.title-contact{
+    width: 100%;
+    padding: 25px;
+    padding-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.title-contact h1{
+    color: white;
+    font-size: 2.88rem;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.main-contact{
+    margin-top: 26px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Mulish', sans-serif;
+    margin-top: 25px;
+}
+
+.ask{
+    margin: 15px;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-bottom: white;
+}
+.ask-bottom{
+    width: 100px;
+    height: 4px;
+    background-color: white;
+}
+
+.form input::placeholder{
+    font-size: 1.1rem;
+    padding-left: 10px;
+    font-family: 'Mulish', sans-serif;
+
+}
+
+.input{
+    width: 600px;
+    height: 55px;
+    margin: 8px;
+    opacity: 0.85;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    outline: none;
+    font-family: 'Mulish', sans-serif;
+    padding-left: 10px;
+    font-size: 1.11rem;
+
+}
+
+.input-ta{
+    width: 600px;
+    height: 175px;
+    margin: 8px;
+    outline: none;
+    opacity: 0.85;
+    font-family: 'Mulish', sans-serif;
+    padding-left: 10px;
+    font-size: 1.11rem;
+}
+
+.input-ta::placeholder{
+    font-size: 1.2rem;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: 'Mulish', sans-serif;
+
+}
+
+.btn{
+    width: 600px;
+    height: 50px;
+    margin-left: 8px;
+    margin-top: -5px;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    outline: none;
+    border: 3px solid white;
+    background-color: rgb(48, 121, 180);
+    color: white;
+    font-size: 1.21rem;
+}
+
+/*///// RESPONSIVE CONTACT /////////*/
+
+@media only screen and (max-width: 842px) {
+    .ask{
+        font-size: 1.06rem;
+    }
+
+    .form{
+        margin-top: 49px;
+    }
+}
+
+@media only screen and (max-width: 699px) {
+    .ask{
+        font-size: 1rem;
+    }
+
+    .form input::placeholder{
+        font-size: 1.1rem;
+    }
+    
+    .input{
+        width: 450px;
+        height: 52px;
+        margin: 7px;
+        font-size: 1.1rem;
+    }
+    
+    .input-ta{
+        width: 450px;
+        height: 147px;
+        margin: 7px;
+        padding-left: 9px;
+        font-size: 1.1rem;
+    }
+    
+    .input-ta::placeholder{
+        font-size: 1.1rem;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    
+    .btn{
+        width: 450px;
+        height: 45px;
+        margin-left: 7px;
+    } 
+}
+
+@media only screen and (max-width: 550px) {
+    .ask{
+        font-size: 1rem;
+    }
+    .input{
+        width: 400px;
+        height: 50px;
+    }
+    
+    .input-ta{
+        width: 400px;
+    }
+    
+    .input-ta::placeholder{
+        font-size: 1.1rem;
+    }
+    
+    .btn{
+        width: 400px;
+    } 
+}
+
+@media only screen and (max-width: 444px) {
+    .ask{
+        font-size: 1rem;
+    }
+    .input{
+        width: 350px;
+        height: 48px;
+    }
+    
+    .input-ta{
+        width: 350px;
+    }
+    
+    .input-ta::placeholder{
+        font-size: 1.1rem;
+    }
+    
+    .btn{
+        width: 350px;
+    } 
+}
+
+@media only screen and (max-width: 378px) {
+    .title-contact h1{
+        font-size: 2.6rem;
+    }
+    .ask{
+        font-size: 0.95rem;
+    }
+    .input{
+        width: 300px;
+        height: 45px;
+        font-size: 1rem;
+    }
+    
+    .input-ta{
+        width: 300px;
+        font-size: 1rem;
+    }
+    
+    .input-ta::placeholder{
+        font-size: 1.1rem;
+    }
+    
+    .btn{
+        width: 300px;
+    } 
+}
+
+@media only screen and (max-width: 320px) {
+    .title-contact h1{
+        font-size: 2.46rem;
+    }
+    .ask{
+        font-size: 0.88rem;
+    }
+    .input{
+        width: 270px;
+        font-size: 1rem;
+    }
+    
+    .input::placeholder{
+        font-size: 1rem;
+    }
+    .input-ta{
+        width: 270px;
+        font-size: 1rem;
+    }
+    
+    .input-ta::placeholder{
+        font-size: 1.1rem;
+    }
+    
+    .btn{
+        width: 270px;
+    } 
+}
+
+@media only screen and (max-width: 282px) {
+    .title-contact h1{
+        font-size: 2.33rem;
+    }
+    .ask{
+        font-size: 0.78rem;
+    }
+    .input{
+        width: 240px;
+        font-size: 1rem;
+    }
+    
+    .input-ta{
+        width: 240px;
+        font-size: 1rem;
+    }
+    
+    .input-ta::placeholder{
+        font-size: 1rem;
+    }
+    
+    .btn{
+        width: 240px;
+        font-size: 1.1rem;
+    } 
+}
+
+@media only screen and (max-width: 252px) {
+    .title-contact h1{
+        font-size: 2.2rem;
+    }
+    .ask{
+        font-size: 0.65rem;
+    }
+    .input{
+        width: 200px;
+        font-size: 0.88rem;
+    }
+
+    .input::placeholder{
+        font-size: 0.88rem;
+    }
+    .input-ta::placeholder{
+        font-size: 0.88rem;
+    }
+    
+    .input-ta{
+        width: 200px;
+        font-size: 1rem;
+    }
+    
+    .btn{
+        width: 200px;
+    } 
+}
+
+@media only screen and (max-width: 212px) {
+   
+    .input{
+        width: 150px;
+        font-size: 0.78rem;
+    }
+
+    .input::placeholder{
+        font-size: 0.78rem;
+    }
+    .input-ta::placeholder{
+        font-size: 0.78rem;
+    }
+    
+    .input-ta{
+        width: 150px;
+        font-size: 0.78rem;
+    }
+    
+    .btn{
+        width: 150px;
+    } 
+}

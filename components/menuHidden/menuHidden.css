@@ -1,0 +1,85 @@
+#hiddenMenu{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 212, 212);
+    z-index:5;
+    display: none;
+    transition: all 2s ease-in;
+    -webkit-transition: all 2s ease-in;
+    -moz-transition: all 2s ease-in;
+    -ms-transition: all 2s ease-in;
+    -o-transition: all 2s ease-in;
+}
+
+@media only screen and (max-width: 1000px) { 
+    #hiddenMenu{
+        display: none;
+        flex-direction: column;
+}
+
+    .head-hidd{
+        width:100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 40px;
+    }
+
+    .closeBtn{
+        width: 60px;
+        height: 60px;
+}
+    .menus-hidd{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        padding-top: 40px;
+        font-family: 'Mulish', sans-serif;
+    }
+    .menus-hidd a{
+        width:100%;
+        height: 100px;
+        border: 3px solid white;
+        text-decoration: none;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 1.69rem;
+    }
+}
+
+@media only screen and (max-width: 500px) { 
+    .head-hidd{
+        padding: 45px;
+    }
+    .closeBtn{
+        width: 50px;
+        height: 50px;
+    }
+    .menus-hidd{
+        padding-top: 40px;
+    }
+    .menus-hidd a{
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 382px) { 
+    .menus-hidd a{
+        width:100%;
+        height: 80px;
+        font-size: 1.5rem;
+    }
+
+    .closeBtn{
+        width: 40px;
+        height: 40px;
+    }
+    .menus-hidd{
+        padding-top: 70px;
+    }
+}
+
